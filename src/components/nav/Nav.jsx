@@ -6,17 +6,20 @@ import { RiServiceLine } from "react-icons/ri";
 import { userState } from "react";
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = userState("#");
+  // const [activeNav, setActiveNav] = userState("#");
 
   return (
     <nav>
-      <a href="#" className={activeNav === "#" ? "active" : ""}>
+      <a href="#" 
+      // className={activeNav === "#" ? "active" : ""}
+      className="active"
+      >
         <AiOutlineHome />
       </a>
       <a
         href="#about"
-        onClick={() => setActiveNav("#about")}
-        className={activeNav === "#about" ? "active" : ""}
+        // onClick={() => setActiveNav("#about")}
+        // className={activeNav === "#about" ? "active" : ""}
       >
         <AiOutlineUser />
       </a>
